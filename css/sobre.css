@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sniglet&display=swap');
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* cabeçalho */
+
+header {
+  height: 140px;
+  background-color: #8ad868;
+  box-shadow: black 1px 1px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  height: 22px;
+  width: 480px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav > a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+nav > a:hover {
+  color: black;
+}
+header > h1 {
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 > img{
+  height: 60px;
+  width: 60px;
+}
+
+#marca_header {
+  font-size: 24px;
+  font-family: 'Hepta Slab', serif;
+  color: #4A85E8;
+}
+
+#slogan_header {
+  font-size: 14px;
+  color: white;
+}
+
+/* body */
+
+h1 {
+  font-size: 16px;
+  font-family: "Sniglet", sans-serif;
+  color: red;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "Sniglet", sans-serif;
+  color: #6C23CC;
+}
+
+p {
+  color: #6C23CC;
+}
+
+article {
+  padding: 60px 0px;
+  color: #6C23CC;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#veterinaria_img {
+  height: 400px;
+  width: 600px; 
+  border-radius: 1600px 600px;
+}
+
+#sobre_nossa_empresa {
+  width: 500px;
+}
+
+#sobre_nossa_empresa > p, h2, dd {
+  font-family: "Sniglet", sans-serif;
+  padding-bottom: 10px;
+}
+
+#sobre_nossa_empresa > dl {
+  font-weight: bold;
+}
+
+dd > img {
+  padding-right: 10px;
+}
+
+dd {
+  display: flex;
+  align-items: center;
+}
+
+#sobre_nossa_empresa > p {
+  text-align: center;
+  font-weight: 500;
+}
+
+a > button {
+  padding: 14px 20px;
+  font-family: "Sniglet", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 60px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+}
+
+a > button:hover {
+  color: black;
+  background-color: #00FF48;
+}
+
+#profissionais {
+  padding: 60px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
+div {
+  width: 500px;
+  padding: 10px;
+}
+
+div > p, h2 {
+  font-family: "Sniglet", sans-serif;
+  padding-bottom: 10px;
+}
