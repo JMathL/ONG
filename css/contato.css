@@ -59,69 +59,36 @@ h1 > img{
   color: white;
 }
 
-/* body */
-
-body {
-  background-color: #6C23CC;
-}
-
-#cachorro_caramelo {
-  height: 400px;
-  width: 400px;
-}
-
-#fundo_cachorro_caramelo {
-  height: 500px;
-  width: 450px;
-  border-radius: 100px;
-  background-color: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: end;
-}
+/* ---------- Body ---------- */
 
 article {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  height: 340px;
+  background-color: #6C23CC;
   display: flex;
   justify-content: space-around;
-  flex-direction: row-reverse;
   align-items: center;
 }
 
 section > h1 {
-  padding-bottom: 10px;
+  font-size: 60px;
   font-family: "Sniglet", sans-serif;
-  font-size: 50px;
-  font-weight: 200;
   color: white;
+  padding-bottom: 10px;
 }
 
 section > p {
-  padding-bottom: 10px;
-  font-size: 20px;
-  font-weight: 200;
-  color: white;
-}
-
-a > button {
-  padding: 14px 20px;
+  font-size: 22px;
   font-family: "Sniglet", sans-serif;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 60px;
-  border: none;
-  background-color: #ff0000;
   color: white;
-  cursor: pointer;
 }
 
-a > button:hover {
-  color: black;
-  background-color: #00FF48;
+#telemarketing {
+  width: 400px;
+  height: 300px;
+  border-radius: 400px 100px;
 }
 
-/* Ondulação */
+/*    Ondulação    */
 
 #onda {
   position: relative;
@@ -130,8 +97,7 @@ a > button:hover {
   width: auto;
   background: #6C23CC;
 }
-
-#onda:before {
+#onda:after {
   content: "";
   display: block;
   position: absolute;
@@ -142,8 +108,7 @@ a > button:hover {
   right: 0px;
   top: 182px;
 }
-
-#onda:after {
+#onda:before {
   content: "";
   display: block;
   position: absolute;
@@ -155,25 +120,26 @@ a > button:hover {
   top: 155px;
 }
 
-/* ---------- Footer ---------- */
+/* ---------- contato ---------- */
 
-footer {
+#contato {
   height: 200px;
   background-color: white;
 }
 
-footer > div {
+#contato > div {
   height: 200px;
+  width: 1200px;
+  margin: auto;
   background-color: white;
   border-radius: 10px;
   box-shadow: black 2px 2px 4px;
-  position: absolute;
-  left: 10%;
-  top: 150%;
-  right: 10%;
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
+  position: relative;
+  top: -100px;
+  z-index: 1;
 }
 
 div > p, dl {
@@ -202,25 +168,21 @@ dd {
   font-size: 18px;
 }
 
-#fav_footer {
+#fav_contato {
   padding-right: 10px;
   height: 18px;
 }
 
-/* ---------- Botão para voltar ao topo ---------- */
+/* ---------- formulário ---------- */
 
-#voltar_ao_topo {
-  display: none; 
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+#formulario {
+  display: flex;
+  align-items: center;
 }
-#voltar_ao_topo.show {
-  display: block;
+
+#formulario > h1 {
+  margin: auto;
+  font-size: 40px;
+  font-family: "Sniglet", sans-serif;
+  color: #6C23CC;
 }

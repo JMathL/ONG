@@ -194,3 +194,21 @@ li > img {
   font-weight: bold;
   color: #6C23CC;
 }
+
+/* ---------- Botão para voltar ao topo ---------- */
+
+#voltar_ao_topo {
+  display: none; 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#voltar_ao_topo.show {
+  display: block;
+}

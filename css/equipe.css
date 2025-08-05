@@ -256,3 +256,72 @@ li > img:hover {
   font-family: "Sniglet", sans-serif;
   color: red;
 }
+
+/* ---------- Footer ---------- */
+
+footer {
+  height: 200px;
+  padding: 20px;
+  background-color: white;  
+}
+
+footer > div {
+  height: 200px;
+  width: 1200px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: black 2px 2px 4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+div > p, dl {
+  position: relative;
+  top: 15%;
+}
+
+div > p {
+  width: 240px;
+  font-family: "Sniglet", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: #6C23CC;
+}
+
+dt {
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-family: "Sniglet", sans-serif;
+  color: red;
+}
+
+dd {
+  padding: 4px;
+  color: #6C23CC;
+  font-size: 18px;
+}
+
+#fav_footer {
+  padding-right: 10px;
+  height: 18px;
+}
+
+/* ---------- Botão para voltar ao topo ---------- */
+
+#voltar_ao_topo {
+  display: none; 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#voltar_ao_topo.show {
+  display: block;
+}
