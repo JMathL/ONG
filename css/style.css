@@ -36,14 +36,14 @@ nav > a:hover {
   color: black;
 }
 
-header > h1 {
+header > aside {
   padding: 0px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1 > img{
+aside > img{
   height: 60px;
   width: 60px;
 }
@@ -123,6 +123,8 @@ a > button:hover {
 
 /* ---------- Ondulação ---------- */
 
+@media ((min-width: 1320px)) {
+
 #onda {
   position: relative;
   padding: 5px;
@@ -153,6 +155,8 @@ a > button:hover {
   background-color: #6C23CC;
   left: 0;
   top: 155px;
+}
+
 }
 
 /* ---------- Footer ---------- */
@@ -225,8 +229,158 @@ dd {
   display: block;
 }
 
-/* ---------- Responsivo ---------- */
+/* ---------- Responsivo para tablet ---------- */
 
-@media (max-width: 768px) {
-  
+@media (min-width: 768px) and (max-width: 1023px) {
+
+#cachorro_caramelo {
+  height: 250px;
+  width: 200px;
+}
+
+#fundo_cachorro_caramelo {
+  height: 300px;
+  width: 300px;
+}
+
+section > h1 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+section {
+  width: 400px;
+}
+
+footer {
+  background-color: #6C23CC;
+}
+
+footer > div {
+  position: absolute;
+  left: 10%;
+  top: 80%;
+  right: 10%;
+}
+
+div > p {
+  width: 200px;
+  font-size: 24px;
+  color: #6C23CC;
+}
+
+dt {
+  font-size: 18px;
+}
+
+dd {
+  font-size: 16px;
+}
+
+}
+
+/* ---------- Responsivo para mobile ---------- */
+
+@media (max-width: 767px) {
+
+header {
+  height: 180px;
+  background-color: #8ad868;
+  box-shadow: black 1px 1px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  height: 22px;
+  width: 480px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav > a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+nav > a:hover {
+  color: black;
+}
+
+header > aside {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside > img{
+  height: 60px;
+  width: 60px;
+}
+
+#marca_header {
+  font-size: 24px;
+  font-family: 'Hepta Slab', serif;
+  color: #4A85E8;
+}
+
+#slogan_header {
+  font-size: 14px;
+  color: white;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cachorro_caramelo {
+  height: 250px;
+  width: 200px;
+}
+
+#fundo_cachorro_caramelo {
+  height: 300px;
+  width: 300px;
+}
+
+section > h1 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+section {
+  width: 400px;
+}
+
+footer {
+  background-color: #6C23CC;
+}
+
+footer > div{
+  position: absolute;
+  left: 10%;
+  top: 120%;
+  right: 10%;
+}
+
+div > p {
+  width: 200px;
+  font-size: 24px;
+  color: #6C23CC;
+}
+
+dt {
+  font-size: 18px;
+}
+
+dd {
+  font-size: 16px;
+}
+
 }

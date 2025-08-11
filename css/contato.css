@@ -90,6 +90,8 @@ section > p {
 
 /* ---------- Ondulação ---------- */
 
+@media ((min-width: 1320px)) {
+
 #onda {
   position: relative;
   padding: 5px;
@@ -118,6 +120,8 @@ section > p {
   background-color: #6C23CC;
   left: 0;
   top: 155px;
+}
+
 }
 
 /* ---------- contato ---------- */
