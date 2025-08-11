@@ -8,7 +8,7 @@
   margin: 0px;
 }
 
-/* cabeçalho */
+/* ---------- Cabeçalho ---------- */
 
 header {
   height: 140px;
@@ -59,7 +59,7 @@ h1 > img{
   color: white;
 }
 
-/* body */
+/* ---------- Body ---------- */
 
 body {
   background-color: #6C23CC;
@@ -121,7 +121,7 @@ a > button:hover {
   background-color: #00FF48;
 }
 
-/* Ondulação */
+/* ---------- Ondulação ---------- */
 
 #onda {
   position: relative;
@@ -223,4 +223,10 @@ dd {
 }
 #voltar_ao_topo.show {
   display: block;
+}
+
+/* ---------- Responsivo ---------- */
+
+@media (max-width: 768px) {
+  
 }

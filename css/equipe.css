@@ -8,7 +8,7 @@
   margin: 0px;
 }
 
-/* cabeçalho */
+/* ---------- Cabeçalho ---------- */
 
 header {
   height: 140px;
@@ -59,7 +59,7 @@ h1 > img{
   color: white;
 }
 
-/*    body    */
+/* ---------- Body ---------- */
 
 article {
   height: 400px;
@@ -92,7 +92,7 @@ figure > img {
   border-radius: 1400px 500px;
 }
 
-/*    Ondulação    */
+/* ---------- Ondulação ---------- */
 
 #onda {
   position: relative;

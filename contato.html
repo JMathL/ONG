@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +38,7 @@
       <div id="onda"></div>
       <aside id="contato">
         <div>
-          <p>Contate-nos a qualquer hora, 7 dias por semana.</p>
+          <p id="txt_contato">Contate-nos a qualquer hora, 7 dias por semana.</p>
           <dl>
             <dt>CONTATOS</dt>
             <dd>
@@ -72,10 +72,111 @@
         <h1>Preencha o formulário ou ligue!</h1>
       </div>
       <form action="/processar_formulario" method="post">
-        <label for="nome"></label>
-        <input type="text" id="nome" name="nome" />
-
+        <input
+          type="text"
+          id="nome"
+          name="nome_usuario"
+          placeholder="Nome"
+          maxlength="30"
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="E-mail"
+          maxlength="20"
+        />
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          placeholder="Telefone"
+          maxlength="14"
+        />
+        <input
+          type="text"
+          id="assunto"
+          name="assunto"
+          placeholder="Assunto"
+          maxlength="30"
+        />
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          placeholder="Mensagem"
+          rows="5"
+          cols="30"
+          maxlength="10000"
+        ></textarea>
+        <input type="submit" value="Envie Sua Mensagem" id="botao_enviar" />
       </form>
+      <div id="duvidas">
+        <h1 id="duvidas_h1">FAQ</h1>
+        <p id="duvidas_p">Dúvidas Frequentes</p>
+        <div id="faq_conteiner">
+          <div class="faq_item">
+            <button class="faq_pergunta">Quando seu pet precisa fazer exames?</button>
+            <div class="faq_resposta">
+              <p>
+                O ideal é o pet realizar exames de forma regular, mesmo que não
+                apresente sintomas, pois a prevenção é fundamental para a saúde do
+                animal
+              </p>
+            </div>
+          </div>
+          <div class="faq_item">
+            <button class="faq_pergunta">Como posso ajudar uma ONG de animais?</button>
+            <div class="faq_resposta">
+              <p>
+                As ONGs precisam de apoio financeiro para alimentação, cuidados
+                veterinários, e manutenção dos abrigos, assim como também, Doar
+                ração, medicamentos, cobertores...
+              </p>
+            </div>
+          </div>
+          <div class="faq_item">
+            <button class="faq_pergunta">Como funciona o processo de adoção?</button>
+            <div class="faq_resposta">
+              <p>
+                Realizamos entrevistas para avaliar a compatibilidade entre o
+                adotante e o animal, e para garantir que o animal irá para um lar
+                seguro e adequado.
+              </p>
+            </div>
+          </div>
+          <div class="faq_item">
+            <button class="faq_pergunta">Como lidam com o excesso de animais?</button>
+            <div class="faq_resposta">
+              <p>
+                Buscamos parcerias com clínicas veterinárias para oferecer
+                castração a preços populares, visando o controle populacional.
+              </p>
+            </div>
+          </div>
+          <div class="faq_item">
+            <button class="faq_pergunta">
+              O que acontece se eu precisar viajar e não puder levar meu animal?
+            </button>
+            <div class="faq_resposta">
+              <p>
+                Oferecemos serviços de hospedagem temporária ou indicamos
+                profissionais que podem cuidar do seu animal durante sua ausência.
+              </p>
+            </div>
+          </div>
+          <div class="faq_item">
+            <button class="faq_pergunta">Aceitam doações de itens usados?</button>
+            <div class="faq_resposta">
+              <p>
+                Aceitamos doações de itens usados, como cobertores, brinquedos e
+                outros acessórios, desde que estejam em bom estado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <button id="voltar_ao_topo" onclick="backToTop()">Voltar ao Topo</button>
+    <script src="script.js"></script>
   </body>
 </html>
