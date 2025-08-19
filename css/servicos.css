@@ -36,14 +36,14 @@ nav > a:hover {
   color: black;
 }
 
-header > h1 {
+header > aside {
   padding: 0px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1 > img{
+aside > img{
   height: 60px;
   width: 60px;
 }
@@ -213,4 +213,125 @@ li > img {
 }
 #voltar_ao_topo.show {
   display: block;
+}
+
+/* ---------- Responsivo para tablet ---------- */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+#marca_header {
+  width: 180px;
+  font-size: 20px;
+}
+
+aside > img {
+  height: 50px;
+  width: 50px;
+}
+
+header > aside {
+  padding: 0px 40px;
+}
+
+nav {
+  width: 60%;
+}
+
+.servicos {
+  height: 400px;
+  width: 40%;
+}
+
+.servicos > img {
+  height: 30%;
+  width: 40%;
+  padding-top: 10px;
+}
+
+.servicos > h1 {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.servicos > p {
+  padding-top: 10px;
+}
+
+section > a {
+  margin: 33%;
+}
+
+li > img {
+  height: 30%;
+  width: 40%;
+}
+
+#footer_li {
+  height: 80%;
+  width: 30%;
+}
+
+footer > ul {
+  height: 360px;
+  width: 90%;
+}
+
+}
+
+/* ---------- Responsivo para mobile ---------- */
+
+@media (max-width: 767px) {
+
+header > aside {
+  width: 30%;
+  padding: 0px 6px;
+}
+
+#marca_header {
+  font-size: 18px;
+}
+
+#slogan_header {
+  font-size: 14px;
+}
+
+.servicos {
+  height: 400px;
+  width: 40%;
+}
+
+.servicos > img {
+  height: 30%;
+  width: 40%;
+  padding-top: 10px;
+}
+
+.servicos > h1 {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.servicos > p {
+  padding-top: 10px;
+}
+
+section > a {
+  margin: 30%;
+}
+
+li > img {
+  height: 30%;
+  width: 40%;
+}
+
+#footer_li {
+  height: 80%;
+  width: 30%;
+}
+
+footer > ul {
+  height: 360px;
+  width: 90%;
+}
+
 }

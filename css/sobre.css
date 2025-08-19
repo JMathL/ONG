@@ -172,7 +172,7 @@ div > p, h2 {
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-  #veterinaria_img {
+#veterinaria_img {
   height: 300px;
   width: 400px; 
   border-radius: 1600px 600px;
